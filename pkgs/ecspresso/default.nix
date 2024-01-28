@@ -11,7 +11,7 @@ buildGoModule rec {
     owner = "kayac";
     repo = "ecspresso";
     rev = "refs/tags/v${version}";
-    hash = lib.fakeHash;
+    hash = "sha256-jqO0kT5DuPeIbHw3AfmbT95mzlS7ovGi2kjJYc4zRyA=";
   };
 
   vendorHash = lib.fakeHash;
