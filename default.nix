@@ -6,8 +6,7 @@ let
   callPackage = nixpkgs.lib.callPackageWith (nixpkgs // pkgs);
 
   pkgs = {
-    hello = callPackage ./pkgs/hello { };
-    # ecspresso = callPackage ./pkgs/ecspresso { };
+    ecspresso = callPackage ./pkgs/ecspresso { };
   };
 in
 pkgs

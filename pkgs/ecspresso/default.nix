@@ -22,13 +22,12 @@ buildGoModule rec {
     "-X=main.Version=v${version}"
   ];
 
-  subPackages = [ "cmd/ecspresso" ];
+  subPackages = ["cmd/ecspresso"];
 
   meta = with lib; {
     description = "A deployment tool for Amazon ECS";
     homepage = "https://github.com/kayac/ecspresso";
     license = licenses.mit;
-    maintainers = with maintainers; [ natsukium ];
     mainProgram = "ecspresso";
   };
 }
