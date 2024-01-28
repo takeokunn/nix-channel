@@ -11,7 +11,6 @@ buildGoModule rec {
     owner = "mazrean";
     repo = "isucrud";
     rev = "refs/tags/v${version}";
-    hash = "sha256-f5a684d0bf17fc9a02bfc748ca19cc160e9bba19";
   };
 
   vendorHash = lib.fakeHash;
