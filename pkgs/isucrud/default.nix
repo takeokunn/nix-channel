@@ -11,10 +11,10 @@ buildGoModule rec {
     owner = "mazrean";
     repo = "isucrud";
     rev = "refs/tags/v${version}";
-    hash = "sha256-RrXu1yjjBWniow9ugM4H/rER0yemaceT8v30dc2QCOg=";
+    hash = "sha256-MXRxR9LBlrUpjHevu1f/xHJ0dU4syM2Ue30pnt5F7+U=";
   };
 
-  vendorHash = lib.fakeHash;
+  vendorHash = "sha256-MXRxR9LBlrUpjHevu1f/xHJ0dU4syM2Ue30pnt5F7+U=";
 
   ldflags = [
     "-s"
