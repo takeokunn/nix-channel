@@ -7,6 +7,7 @@ let
 
   pkgs = {
     hello = callPackage ./pkgs/hello { };
+    ecspresso = callPackage ./pkgs/ecspresso { };
   };
 in
 pkgs
