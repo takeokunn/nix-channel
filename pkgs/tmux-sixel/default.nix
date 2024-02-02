@@ -24,15 +24,13 @@ in
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "tmux";
-  version = "3.3a";
-
   outputs = [ "out" "man" ];
 
   src = fetchFromGitHub {
     owner = "tmux";
     repo = "tmux";
-    rev = finalAttrs.version;
-    sha256 = "sha256-SygHxTe7N4y7SdzKixPFQvqRRL57Fm8zWYHfTpW+yVY=";
+    rev = "ea7136fb838a2831d38e11ca94094cea61a01e3a";
+    sha256 = lib.fakeHash;
   };
 
   patches = [
@@ -100,7 +98,6 @@ stdenv.mkDerivation (finalAttrs: {
       * Terminal locking, manually or after a timeout.
       * A clean, easily extended, BSD-licensed codebase, under active development.
     '';
-    changelog = "https://github.com/tmux/tmux/raw/${finalAttrs.version}/CHANGES";
     license = lib.licenses.bsd3;
     platforms = lib.platforms.unix;
     mainProgram = "tmux";
