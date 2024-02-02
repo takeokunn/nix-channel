@@ -43,12 +43,12 @@ stdenv.mkDerivation (finalAttrs: {
     pkg-config
     autoreconfHook
     bison
-    libsixel
   ];
 
   buildInputs = [
     ncurses
     libevent
+    libsixel
   ] ++ lib.optionals withSystemd [ systemd ]
   ++ lib.optionals withUtf8proc [ utf8proc ]
   ++ lib.optionals withUtempter [ libutempter ];
