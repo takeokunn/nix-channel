@@ -30,7 +30,7 @@ stdenv.mkDerivation (finalAttrs: {
     owner = "tmux";
     repo = "tmux";
     rev = "ea7136fb838a2831d38e11ca94094cea61a01e3a";
-    sha256 = lib.fakeHash;
+    sha256 = "0y8j2s1bfvfvq7j539g9q8fknjmcpz3fw7flxa29s87qgpaqm35n";
   };
 
   patches = [
