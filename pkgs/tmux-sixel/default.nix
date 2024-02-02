@@ -23,7 +23,7 @@ let
 in
 
 stdenv.mkDerivation (finalAttrs: {
-  pname = "tmux";
+  name = "tmux";
   outputs = [ "out" "man" ];
 
   src = fetchFromGitHub {
