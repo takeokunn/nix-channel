@@ -33,10 +33,6 @@ stdenv.mkDerivation (finalAttrs: {
     sha256 = "0y8j2s1bfvfvq7j539g9q8fknjmcpz3fw7flxa29s87qgpaqm35n";
   };
 
-  patches = [
-    ./CVE-2022-47016.patch
-  ];
-
   nativeBuildInputs = [
     pkg-config
     autoreconfHook
