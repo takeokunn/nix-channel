@@ -29,7 +29,7 @@ stdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "tmux";
     repo = "tmux";
-    rev = "ea7136fb838a2831d38e11ca94094cea61a01e3a";
+    rev = "HEAD";
     sha256 = lib.fakeHash;
   };
 
