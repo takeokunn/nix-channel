@@ -23,7 +23,7 @@ let
 in
 
 stdenv.mkDerivation (finalAttrs: {
-  name = "tmux";
+  name = "tmux-sixel";
   outputs = [ "out" "man" ];
 
   src = fetchFromGitHub {
