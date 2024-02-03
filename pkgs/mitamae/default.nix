@@ -6,7 +6,7 @@ stdenv.mkDerivation rec {
 
   src = fetchurl {
     url = "https://github.com/itamae-kitchen/mitamae/releases/download/v1.14.1/mitamae-aarch64-darwin.tar.gz";
-    sha256 = "sha256-3F/oblpupG+NHe7bgSZwhxuc0GVHx75FbrrOc/g8v3s=";
+    sha256 = "sha256-r+Gh3XZkFNYQ/T8Fpo19Ij5gwpP003e37Ead1huihVI=";
   };
 
   meta = {
