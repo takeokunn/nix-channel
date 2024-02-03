@@ -6,7 +6,7 @@ stdenv.mkDerivation rec {
 
   src = fetchurl {
     url = "https://github.com/itamae-kitchen/mitamae/releases/download/${version}/${pname}-x86_64-linux.tar.gz";
-    sha256 = lib.fakeSha256;
+    sha256 = "sha256-3F/oblpupG+NHe7bgSZwhxuc0GVHx75FbrrOc/g8v3s=";
   };
 
   meta = {
