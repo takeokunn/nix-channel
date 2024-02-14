@@ -9,6 +9,7 @@ let
     ecspresso = callPackage ./pkgs/ecspresso { };
     isucrud = callPackage ./pkgs/isucrud { };
     tmux-sixel = callPackage ./pkgs/tmux-sixel { };
+    mitamae = callPackage ./pkgs/mitamae { };
   };
 in
 pkgs
