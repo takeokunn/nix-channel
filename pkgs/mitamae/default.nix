@@ -7,7 +7,7 @@
 
 let
   pname = "mitamae";
-  version = "v1.14.1";
+  version = "1.14.1";
 
   _meta = with lib; {
     description = "mitamae is a fast, simple, and single-binary configuration management tool with a DSL like Chef";
