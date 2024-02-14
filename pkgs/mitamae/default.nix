@@ -37,8 +37,8 @@ in
     installPhase = ''
       runHook preInstall
 
-      mkdir -p $out
-      cp -r mitamae-aarch64-darwin $out/mitamae
+      mkdir -p $out/bin
+      cp -r mitamae-aarch64-darwin $out/bin/mitamae
 
       runHook postInstall
     '';
