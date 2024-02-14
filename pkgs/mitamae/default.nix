@@ -23,7 +23,7 @@ in
     inherit pname version;
 
     src = fetchzip {
-      url = "https://github.com/itamae-kitchen/mitamae/releases/download/v${version}/mitamae-v${version}.tar.gz";
+      url = "https://github.com/itamae-kitchen/mitamae/releases/download/v${version}/mitamae-aarch64-darwin.tar.gz";
       hash = "sha256-CfyuWvxkeZQVuwMbX90CZF0RiY6q+o0WtfE3H9Z8q1o=";
     };
 
