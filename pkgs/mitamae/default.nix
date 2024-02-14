@@ -34,6 +34,15 @@ in
     dontConfigure = true;
     dontBuild = true;
 
+    installPhase = ''
+      runHook preInstall
+
+      mkdir -p $out
+      cp -r mitamae-aarch64-darwin $out/mitamae
+
+      runHook postInstall
+    '';
+
     meta = _meta // {
       sourceProvenance = with lib.sourceTypes; [
         binaryNativeCode
